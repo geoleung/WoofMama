@@ -1,0 +1,42 @@
+main {
+    background-color: #ACDEE6;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__description {
+    align-self: center;
+    width: 48%;
+}
+
+.about__picture {
+    width: 50%;
+    height: auto;
+}
+
+.about__picture img {
+    width: 400px;
+}
+
+@media (min-width: 900px) {
+    .about {
+        flex-direction: row-reverse;
+    }
+    .about__description {
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__description {
+        padding-right: 0;
+    }
+}

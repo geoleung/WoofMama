@@ -1,0 +1,106 @@
+*{box-sizing: border-box;}
+
+.testimonials {
+    position: relative;
+}
+
+.testimonials .section__heading {
+    text-align: center;
+}
+
+.carousel {
+    // max-width: 400px;
+    // position: relative;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__item {
+    display: none;
+    width: 50%;
+    // width: 400px;
+    // height: 600px;
+    flex-direction: row-reverse;
+}
+
+.carousel__image__container {
+    width: 50%;
+}
+
+.carousel__item img {
+    width: 300px;
+    height: 200px;
+}
+
+.testimonial__writeup {
+    width: 48%;
+    align-self: center;
+    padding-right: 1rem;
+}
+
+.testimonial__text {
+    font-size: 1.5rem;
+}
+
+.testimonial__text span {
+    font-weight: bold;
+}
+
+.testimonial__author {
+    align-self: flex-end;
+}
+
+.carousel__button--left, .carousel__button--right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    // margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    background-color: #FEED7F;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    // border-radius: 0 3px 3px 0;
+    z-index: 1001;
+    border-radius: 50%;
+}
+
+.carousel__button--left {
+    left: 0;
+}
+
+.carousel__button--right {
+    right: 0;
+    // border-radius: 3px 0 0 3px;
+}
+
+.carousel__button--left::after, .carousel__button--right::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--right::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+.carousel__button--left:hover, .carousel__button--right:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.carousel__button--left:hover::after, .carousel__button--right:hover::after {
+    border-right: 2px solid #FEED7F;
+    border-bottom: 2px solid  #FEED7F;
+}
