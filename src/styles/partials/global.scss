@@ -7,13 +7,8 @@ body {
     font-size: 1.2rem;
 }
 
-header, main, section, footer {
+header, section, footer {
     padding-top: 2.25rem;
-}
-
-.wrapper {
-    width: 75%;
-    margin: 0 auto;
 }
 
 h1, h2 {
@@ -22,5 +17,16 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
 }

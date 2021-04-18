@@ -28,6 +28,13 @@ const showCarousel = (slidePosition) => {
 
     // Change the styling of current item so that it is not hidden
     items[currentSlide-1].style.display = 'flex'
+    
 }
+
+const autoChange = () => {
+    carouselControls(1)
+}
+
+const autoTransition = setInterval(autoChange, 5000)
 
 showCarousel(currentSlide)
