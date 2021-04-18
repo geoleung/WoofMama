@@ -6,13 +6,21 @@
     <title>WoofMama</title>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 <body>
     <nav>
         <div class="wrapper nav__container">
             <div class="nav__logo">
-                <img src="assets/himama-logo-lg.webp" alt="">
+                <a href="https://www.himama.com/">
+                    <img src="assets/himama-logo-lg.webp" alt="HiMama logo">
+                </a>
             </div>
             <label for="toggle"><i class="fa fa-bars"></i></label>
             <input type="checkbox" id="toggle" name="toggle" val="">
@@ -32,7 +40,7 @@
     <div class="wrapper">
         <header>
             <div class="heading__text">
-                <h1>The Essential Dogcare App</h1>
+                <h1>WoofMama: <br>The Essential Dogcare App</h1>
                 <p>Doggo ipsum long doggo heckin good boys wow very biscit, shooberino. Blep I am bekom fat the neighborhood pupper yapper, stop it fren wow such tempt.</p>
                 <div class="heading__buttons">
                     <button class="heading__link--start">
@@ -112,13 +120,14 @@
                     
                     <!-- Carousel item change buttons -->
                     <!-- &#10094; -->
-                    <button class="carousel__button--left" onclick="carouselControls(-1)"></button>
-                    <button class="carousel__button--right" onclick="carouselControls(1)"></button>
+                    <button class="carousel__button--left" onclick="carouselControls(-1)" id="left-button"></button>
+                    <button class="carousel__button--right" onclick="carouselControls(1)" id="right-button"></button>
                 <!-- </div> -->
             </div>
         </section>
+        <hr>
         <footer>
-            <p class="copyText">&copy; HiMama 2021</p>
+            <p class="copyText">&copy; 2021 HiMama.</p>
         </footer>
     </div>
     

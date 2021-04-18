@@ -4,14 +4,12 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 3rem;
 }
 
 .about__text {
     padding: 0.5rem;
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
 }
 
 .about__text .section__heading {
