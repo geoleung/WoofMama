@@ -9,9 +9,6 @@
 }
 
 .carousel {
-    // max-width: 400px;
-    // position: relative;
-    // margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -26,15 +23,16 @@
 
 .carousel__image__container {
     width: 50%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .carousel__item img {
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
 }
 
 .testimonial__writeup {
-    width: 48%;
+    width: 50%;
     align-self: center;
     padding-right: 1rem;
 }
@@ -103,4 +101,30 @@
 .carousel__button--left:hover::after, .carousel__button--right:hover::after {
     border-right: 2px solid #FEED7F;
     border-bottom: 2px solid  #FEED7F;
+}
+
+@media (max-width: 1100px) {
+    .carousel__item {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(196,167,119,.701961);
+        padding: 3rem;
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
+        align-self: stretch;
+        height: 500px;
+    }
+    .carousel__image__container {
+        width: auto;
+        height: auto;
+        margin-bottom: auto;
+        max-height: 500px;
+    }
+    .testimonial__writeup {
+        text-align: center;
+        width: 100%;
+    }
+    .testimonial__author {
+        margin: auto;
+    }
 }
