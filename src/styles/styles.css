@@ -170,49 +170,43 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.nav__logo {
-  width: 20%; }
-
 nav label, nav input {
   display: none; }
 
 .nav__links {
-  padding: 0;
+  padding: 0 0 0 3rem;
   list-style: none;
-  width: 65%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 10px; }
+  justify-content: space-between; }
 
 .nav__links li a {
-  color: #808080;
+  color: #43b9c6;
   font-weight: bold;
-  font-size: 1.5rem;
-  padding: 10px 0; }
+  font-size: 1.5rem; }
 
 .nav__links li a:hover {
-  color: #333;
-  text-decoration: underline; }
+  color: #2c8791; }
 
 .nav__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  justify-content: normal; }
 
 .nav__buttons button {
   font-weight: 700;
   margin-left: .6rem;
   text-align: center;
   vertical-align: middle;
-  padding: .375rem .75rem;
-  font-size: 1.2rem;
+  padding: .375rem 1.5rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   border-radius: .25rem;
   -webkit-transition: color .15s ease-in-out , background-color .15s ease-in-out , border-color .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
@@ -232,31 +226,38 @@ nav label, nav input {
   color: #43b9c6;
   background-color: transparent; }
 
-@media (max-width: 900px) {
-  .nav__links {
-    width: 50%; } }
+.nav__button--start:hover {
+  background-color: #67a338;
+  border-color: #619935; }
+
+.nav__button--login:hover {
+  background-color: #43b9c6;
+  color: #FFF; }
+
+@media (min-width: 950px) {
+  .nav__logo {
+    width: 20%; } }
 
 @media (max-width: 670px) {
-  nav {
+  .nav__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding-right: 20px; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .nav__links {
     display: none; }
   nav label {
     display: inline;
     color: #808080;
     font-size: 1.8rem;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+  i {
+    font-size: 4rem; }
   input#toggle:checked + .nav__links {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -264,14 +265,18 @@ nav label, nav input {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: auto; }
+    width: auto;
+    top: 5rem;
+    left: 40%; }
   .nav__links li {
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.9); }
+    background: rgba(255, 255, 255, 0.9); }
   .nav__links li a {
     font-size: 1.6rem;
     padding: 20px; }
   .nav__links li a:active + .nav__links {
+    display: none; }
+  .nav__button--login {
     display: none; } }
 
 header {
@@ -301,7 +306,7 @@ h1 {
 
 .heading__link--start, .heading__link--quote {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 800;
   margin: 1rem;
   color: #000;
   border-radius: 0.8rem; }
@@ -369,7 +374,8 @@ main {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 3rem; }
 
 .about__text {
   padding: 0.5rem;
@@ -411,7 +417,8 @@ main {
   box-sizing: border-box; }
 
 .testimonials {
-  position: relative; }
+  position: relative;
+  padding-bottom: 2.25rem; }
 
 .testimonials .section__heading {
   text-align: center; }
@@ -430,7 +437,11 @@ main {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s; }
 
 .carousel__image__container {
   width: 50%;
@@ -538,8 +549,21 @@ main {
   .testimonial__author {
     margin: auto; } }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: .2; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .2; }
+  to {
+    opacity: 1; } }
+
 .copyText {
+  font-family: sans-serif;
   margin: 25px 0 20px 0;
-  text-align: center;
   font-size: 1.5rem;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 2.25rem; }

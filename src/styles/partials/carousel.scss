@@ -2,6 +2,7 @@
 
 .testimonials {
     position: relative;
+    padding-bottom: 2.25rem;
 }
 
 .testimonials .section__heading {
@@ -16,9 +17,13 @@
 .carousel__item {
     display: none;
     width: 50%;
-    // width: 400px;
-    // height: 600px;
     flex-direction: row-reverse;
+
+    // Fade in animations
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
 .carousel__image__container {
@@ -55,7 +60,6 @@
     top: 50%;
     width: 3rem;
     height: 3rem;
-    // margin-top: -22px;
     padding: 16px;
     color: #000;
     background-color: #FEED7F;
@@ -63,7 +67,6 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    // border-radius: 0 3px 3px 0;
     z-index: 1001;
     border-radius: 50%;
 }
@@ -74,7 +77,6 @@
 
 .carousel__button--right {
     right: 0;
-    // border-radius: 3px 0 0 3px;
 }
 
 .carousel__button--left::after, .carousel__button--right::after {
@@ -127,4 +129,14 @@
     .testimonial__author {
         margin: auto;
     }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+from {opacity: .2}
+to {opacity: 1}
 }

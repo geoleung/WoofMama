@@ -20,7 +20,7 @@ h1 {
 
 .heading__link--start, .heading__link--quote {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 800;
     margin: 1rem;
     color: #000;
     border-radius: 0.8rem;
@@ -75,11 +75,3 @@ h1 {
         text-align: right;
     }
 }
-
-// @media (max-width: 670px) {
-//     .heading__buttons {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//     }
-// }
