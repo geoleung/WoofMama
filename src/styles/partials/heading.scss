@@ -75,3 +75,10 @@ h1 {
         text-align: right;
     }
 }
+
+@media (max-width: 350px) {
+    .heading__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}

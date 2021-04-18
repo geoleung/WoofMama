@@ -29,13 +29,12 @@
 .carousel__image__container {
     width: 50%;
     height: 200px;
-    // overflow: hidden;
-    margin-bottom: 0;
 }
 
 .carousel__item img {
     max-width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .testimonial__writeup {
@@ -46,6 +45,7 @@
 
 .testimonial__text {
     font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .testimonial__text span {
@@ -121,15 +121,27 @@
     .carousel__image__container {
         width: auto;
         height: auto;
-        margin-bottom: auto;
-        max-height: 500px;
     }
+
     .testimonial__writeup {
-        text-align: center;
         width: 100%;
+        padding: 0;
+        margin-top: 5rem;
     }
     .testimonial__author {
         margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel__item {
+        width: 70%;
+    }
+}
+
+@media (max-width: 350px) {
+    .carousel__image__container {
+        overflow: hidden;
     }
 }
 

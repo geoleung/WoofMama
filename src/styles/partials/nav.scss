@@ -133,3 +133,9 @@ nav label, nav input {
         display: none;
     }
 }
+
+@media (max-width: 350px) {
+    nav {
+        padding: 0;
+    }
+}
