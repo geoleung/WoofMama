@@ -446,10 +446,11 @@ main {
 .carousel__image__container {
   width: 50%;
   height: 200px;
-  overflow: hidden; }
+  margin-bottom: 0; }
 
 .carousel__item img {
-  max-width: 100%; }
+  max-width: 300px;
+  height: 200px; }
 
 .testimonial__writeup {
   width: 50%;
